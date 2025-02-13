@@ -2,9 +2,9 @@
 
 Ứng dụng web hiển thị các danh ngôn truyền cảm hứng được xây dựng bằng React.
 
-## 📝 Mô tả
+Đây là một ứng dụng web đơn trang (SPA) hiển thị bộ sưu tập các câu danh ngôn truyền cảm hứng từ những người nổi tiếng trên thế giới. Mỗi danh ngôn được hiển thị trong một card đẹp mắt với hình ảnh minh họa, được phân loại theo chủ đề khác nhau như sự nghiệp, động lực, học tập, etc.
 
-Dự án "Danh Ngôn" là một ứng dụng web đơn trang (SPA) hiển thị bộ sưu tập các câu danh ngôn truyền cảm hứng từ những người nổi tiếng trên thế giới. Mỗi danh ngôn được hiển thị trong một card đẹp mắt với hình ảnh minh họa, được phân loại theo chủ đề khác nhau như sự nghiệp, động lực, học tập, etc.
+![Screenshot](./images/screenshot.png)
 
 ## ✨ Tính năng
 
