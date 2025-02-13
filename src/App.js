@@ -7,63 +7,63 @@ function App() {
     <div className="App">
       <div className="quotes-container">
         <QuoteCard
-          image="/images/thanhcong1.jpg"
+          image="/images/thanhcong01.jpg"
           tag="Sự nghiệp"
           quote="Trên con đường thành công sẽ không có dấu chân của những kẻ lười biếng."
           author="Brian Tracy"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong2.jpg"
+          image="/images/thanhcong02.jpg"
           tag="Sự nghiệp"
           quote="Thành công không phải là đích đến, mà là cả một hành trình."
           author="Arthur Ashe"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong3.jpg"
+          image="/images/thanhcong03.jpg"
           tag="Phát triển bản thân"
           quote="Đừng so sánh bản thân với người khác. Hãy so sánh với chính mình của ngày hôm qua."
           author="Jordan Peterson"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong4.jpg"
+          image="/images/thanhcong04.jpg"
           tag="Thất bại"
           quote="Thất bại không phải là ngược lại với thành công, nó là một phần của thành công."
           author="Arianna Huffington"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong5.jpg"
+          image="/images/thanhcong05.jpg"
           tag="Động lực"
           quote="Đừng chờ đợi cơ hội. Hãy tự tạo ra nó."
           author="Steve Jobs"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong6.jpg"
+          image="/images/thanhcong06.jpg"
           tag="Học tập"
           quote="Học từ ngày hôm qua, sống cho ngày hôm nay, hy vọng cho ngày mai."
           author="Albert Einstein"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong7.jpg"
+          image="/images/thanhcong07.jpg"
           tag="Khởi nghiệp"
           quote="Ý tưởng tốt nhất thường đến từ việc giải quyết vấn đề của chính bạn."
           author="Mark Zuckerberg"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong8.jpg"
+          image="/images/thanhcong08.jpg"
           tag="Lãnh đạo"
           quote="Lãnh đạo không phải là về việc trở thành người giỏi nhất. Mà là về việc giúp người khác trở nên tốt hơn."
           author="Simon Sinek"
           year="2025"
         />
         <QuoteCard
-          image="/images/thanhcong9.jpg"
+          image="/images/thanhcong09.jpg"
           tag="Sáng tạo"
           quote="Sáng tạo là trí thông minh đang vui chơi."
           author="Albert Einstein"
