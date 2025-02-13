@@ -56,13 +56,6 @@ danh-ngon/
 └── README.md
 ```
 
-## 🖼️ Yêu cầu hình ảnh
-
-Để ứng dụng hoạt động đúng, cần chuẩn bị:
-- 15 hình ảnh minh họa đặt trong thư mục `public/images/`
-- Đặt tên file theo format: `thanhcong1.jpg` đến `thanhcong15.jpg`
-- Khuyến nghị sử dụng hình ảnh có tỷ lệ khung hình phù hợp và chất lượng tốt
-
 
 ## 👤 Tác giả
 
