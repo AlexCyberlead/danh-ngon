@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import QuoteCard from './components/QuoteCard';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="quotes-container">
@@ -115,5 +115,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
