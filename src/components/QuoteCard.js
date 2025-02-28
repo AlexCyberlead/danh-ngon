@@ -1,20 +1,31 @@
-import React from 'react';
-import '../QuoteCard.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/QuoteCard.css";
 
-function QuoteCard(props) {
+function QuoteCard({ id, image, tag, quote, author, year, showImage = true, showActions = false, onDelete, onEdit }) {
   return (
     <div className="quote-card">
-      <div className="quote-image">
-        <img src={props.image} alt="Hình minh họa" />
-        <div className="quote-tag">{props.tag}</div>
-      </div>
+      {showImage && (
+        <div className="quote-image">
+          <img src={image} alt="Hình minh họa" />
+          <div className="quote-tag">{tag}</div>
+        </div>
+      )}
       <div className="quote-content">
-        <div className="quote-year">{props.year}</div>
-        <p className="quote-text">{props.quote}</p>
-        <p className="quote-author">~ {props.author}</p>
+        <div className="quote-year">{year}</div>
+        <Link to={`/quote/${id}`} className="detail-link" style={{ textDecoration: "none", color: "inherit" }}>
+          <p className="quote-text">{quote}</p>
+          <p className="quote-author">~ {author}</p>
+        </Link>
+        {showActions && (
+          <>
+            <button onClick={() => onEdit(id)}>Sửa</button>
+            <button onClick={() => onDelete(id)}>Xóa</button>
+          </>
+        )}
       </div>
     </div>
   );
 }
 
-export default QuoteCard; 
+export default QuoteCard;

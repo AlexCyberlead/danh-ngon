@@ -49,3 +49,21 @@
   justify-content: center;
   gap: 5px;
 }
+
+
+
+.back-button {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
