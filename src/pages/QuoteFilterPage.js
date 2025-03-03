@@ -3,7 +3,6 @@ import QuoteList from "../components/QuoteList";
 import QuoteFilter from "../components/QuoteFilter";
 import BackButton from "../components/BackButton";
 import { quotes as initialQuotes } from "../quotes";
-import "../styles/SharedStyles.css";
 
 export default function QuoteFilterPage() {
   const [filteredQuotes, setFilteredQuotes] = useState([]);

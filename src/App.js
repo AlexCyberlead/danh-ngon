@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/App.css";
-import Home from "./pages/Home";
+import Home from "./pages/HomePage";
 import QuoteList from "./pages/QuoteListPage";
 import QuoteSearch from "./pages/QuoteSearchPage";
 import QuoteFilter from "./pages/QuoteFilterPage";
 import AddQuote from "./pages/AddQuotePage";
-import QuoteDetail from "./pages/QuoteDetail";
-import ManageQuotes from "./pages/ManageQuotes";
+import QuoteDetail from "./pages/QuoteDetailPage";
+import ManageQuotes from "./pages/ManageQuotesPage";
 import { quotes as initialQuotes } from "./quotes";
 
 export default function App() {
@@ -15,7 +14,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="text-center min-h-screen bg-gray-100 p-10">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/quotes" element={<QuoteList quotes={quotes} />} />

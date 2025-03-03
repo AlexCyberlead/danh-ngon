@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import QuoteList from "../components/QuoteList";
 import QuoteForm from "../components/QuoteForm";
+import BackButton from "../components/BackButton";
 import { quotes as initialQuotes } from "../quotes";
-import "../styles/SharedStyles.css";
+import "../styles/tailwind.css";
 
 export default function AddQuotePage() {
   const [quotes, setQuotes] = useState(initialQuotes);
@@ -31,8 +32,9 @@ export default function AddQuotePage() {
 
   return (
     <div className="page-container">
+      <BackButton />
       <div className="quotes-list">
-        <h1>Thêm Danh Ngôn Mới</h1>
+        <h1 className="text-2xl font-bold">Thêm Danh Ngôn Mới</h1>
         <QuoteList quotes={quotes} showImage={true} />
       </div>
       <div className="form-container">

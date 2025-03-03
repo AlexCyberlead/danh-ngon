@@ -44,12 +44,13 @@ export default function SearchBar({ quotes, setFilteredQuotes }) {
         value={query}
         onChange={handleChange}
         placeholder="Tìm kiếm..."
+        className="search-input"
       />
-      <button onClick={() => handleSearch(query)}>Tìm</button>
+      <button onClick={() => handleSearch(query)} className="search-button">Tìm</button>
       {suggestions.length > 0 && (
         <ul className="suggestions-list">
           {suggestions.map((suggestion, index) => (
-            <li key={index} onClick={() => handleSelect(suggestion.quote)}>
+            <li key={index} onClick={() => handleSelect(suggestion.quote)} className="suggestion-item">
               {suggestion.quote}
             </li>
           ))}

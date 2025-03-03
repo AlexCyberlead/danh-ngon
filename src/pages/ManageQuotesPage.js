@@ -3,7 +3,7 @@ import QuoteList from "../components/QuoteList";
 import BackButton from "../components/BackButton";
 import QuoteForm from "../components/QuoteForm";
 import { quotes as initialQuotes } from "../quotes";
-import "../styles/ManageQuotes.css";
+import "../styles/tailwind.css";
 
 export default function ManageQuotes() {
   const [quotes, setQuotes] = useState([]);
@@ -46,18 +46,18 @@ export default function ManageQuotes() {
   };
 
   return (
-    <div className="manage-quotes-container">
+    <div className="page-container">
       <BackButton />
       <div className="quotes-list">
-        <h1>Manage Quotes</h1>
+        <h1 className="text-2xl font-bold">Manage Quotes</h1>
         <QuoteList quotes={quotes} showActions={true} onDelete={handleDelete} onEdit={handleEdit} />
       </div>
       <div className="form-container">
         {showConfirmDelete && selectedQuote && (
           <div className="confirm-dialog">
             <p>Bạn có chắc muốn xóa trích dẫn này không? ID: {selectedQuote.id}</p>
-            <button onClick={confirmDelete}>Yes</button>
-            <button onClick={() => setShowConfirmDelete(false)}>No</button>
+            <button onClick={confirmDelete} className="button">Yes</button>
+            <button onClick={() => setShowConfirmDelete(false)} className="button-secondary">No</button>
           </div>
         )}
         {showConfirmEdit && selectedQuote && (

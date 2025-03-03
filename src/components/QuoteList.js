@@ -3,9 +3,9 @@ import QuoteCard from "./QuoteCard";
 
 export default function QuoteList({ quotes, showImage = true, showActions = false, onDelete, onEdit }) {
   return (
-    <div className="quotes-container">
+    <div className="quote-list">
       {quotes.map((quote) => (
-        <div key={quote.id} style={{ textDecoration: "none", color: "inherit" }}>
+        <div key={quote.id} className="quote-item">
           <QuoteCard
             id={quote.id}
             image={quote.image}

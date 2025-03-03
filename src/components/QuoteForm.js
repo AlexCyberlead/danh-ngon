@@ -28,8 +28,8 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
 
   return (
     <div className="quote-form">
-      <div className="form-row">
-        <label>Tag:</label>
+      <div className="form-group">
+        <label className="form-label">Tag:</label>
         {isEditingTag ? (
           <input
             type="text"
@@ -37,9 +37,10 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
             onChange={handleNewTagChange}
             placeholder="Enter new tag"
             onBlur={() => setIsEditingTag(false)}
+            className="form-input"
           />
         ) : (
-          <select value={quote.tag} onChange={handleTagChange} onDoubleClick={handleTagDoubleClick}>
+          <select value={quote.tag} onChange={handleTagChange} onDoubleClick={handleTagDoubleClick} className="form-select">
             <option value="">Select Tag</option>
             {allTags.map((tag) => (
               <option key={tag} value={tag}>
@@ -50,41 +51,47 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
           </select>
         )}
       </div>
-      <div className="form-row">
-        <label>Author:</label>
+      <div className="form-group">
+        <label className="form-label">Author:</label>
         <input
           type="text"
           value={quote.author}
           onChange={(e) => onChange({ ...quote, author: e.target.value })}
+          className="form-input"
         />
       </div>
-      <div className="form-row">
-        <label>Year:</label>
+      <div className="form-group">
+        <label className="form-label">Year:</label>
         <input
           type="text"
           value={quote.year}
           onChange={(e) => onChange({ ...quote, year: e.target.value })}
+          className="form-input"
         />
       </div>
-      <div className="form-row">
-        <label>Quote:</label>
+      <div className="form-group">
+        <label className="form-label">Quote:</label>
         <textarea
           value={quote.quote}
           onChange={(e) => onChange({ ...quote, quote: e.target.value })}
+          className="form-textarea"
         />
       </div>
       {!isFilterForm && (
-        <div className="form-row">
-          <label>Image URL:</label>
+        <div className="form-group">
+          <label className="form-label">Image URL:</label>
           <input
             type="text"
             value={quote.image}
             onChange={(e) => onChange({ ...quote, image: e.target.value })}
+            className="form-input"
           />
         </div>
       )}
-      <button onClick={onSubmit}>{isFilterForm ? "Lọc" : "Lưu"}</button>
-      <button onClick={onCancel}>Hủy</button>
+      <div className="form-actions">
+        <button onClick={onSubmit} className="form-button">{isFilterForm ? "Lọc" : "Lưu"}</button>
+        <button onClick={onCancel} className="form-button-secondary">Hủy</button>
+      </div>
     </div>
   );
 }

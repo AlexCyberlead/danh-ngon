@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import QuoteList from "../components/QuoteList";
 import QuoteFilter from "../components/QuoteFilter";
 import BackButton from "../components/BackButton";
-import "../styles/SearchBar.css";
 
 export default function QuoteListPage({ quotes }) {
   const [filteredQuotes, setFilteredQuotes] = useState(quotes);
