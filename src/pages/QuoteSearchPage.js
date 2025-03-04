@@ -11,7 +11,7 @@ export default function QuoteSearchPage() {
     <div className="page-container">
       <BackButton />
       <div className="quotes-list">
-        <h1>Tìm Kiếm Danh Ngôn</h1>
+        <h1 className="text-2xl font-bold">Tìm Kiếm Danh Ngôn</h1>
         <SearchBar quotes={initialQuotes} setFilteredQuotes={setFilteredQuotes} />
         <QuoteList quotes={filteredQuotes} showImage={true} />
       </div>

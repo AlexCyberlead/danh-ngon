@@ -18,8 +18,8 @@ export default function QuoteCard({ id, image, tag, quote, author, year, showIma
         </Link>
         {showActions && (
           <div className="quote-card-actions">
-            <button onClick={() => onEdit(id)} className="quote-card-edit-button">Sửa</button>
-            <button onClick={() => onDelete(id)} className="quote-card-delete-button">Xóa</button>
+            <button onClick={() => onEdit(id)} className="btn btn-primary">Sửa</button>
+            <button onClick={() => onDelete(id)} className="btn btn-danger">Xóa</button>
           </div>
         )}
       </div>

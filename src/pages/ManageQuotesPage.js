@@ -56,8 +56,8 @@ export default function ManageQuotes() {
         {showConfirmDelete && selectedQuote && (
           <div className="confirm-dialog">
             <p>Bạn có chắc muốn xóa trích dẫn này không? ID: {selectedQuote.id}</p>
-            <button onClick={confirmDelete} className="button">Yes</button>
-            <button onClick={() => setShowConfirmDelete(false)} className="button-secondary">No</button>
+            <button onClick={confirmDelete} className="btn btn-primary">Yes</button>
+            <button onClick={() => setShowConfirmDelete(false)} className="btn btn-secondary">No</button>
           </div>
         )}
         {showConfirmEdit && selectedQuote && (

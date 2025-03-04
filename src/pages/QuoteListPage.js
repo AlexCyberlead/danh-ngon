@@ -9,11 +9,13 @@ export default function QuoteListPage({ quotes }) {
   const allTags = [...new Set(quotes.map((quote) => quote.tag))];
 
   return (
-    <div>
-      <h1>Danh Sách Trích Dẫn</h1>
+    <div className="page-container">
       <BackButton />
-      <QuoteFilter quotes={quotes} setFilteredQuotes={setFilteredQuotes} allTags={allTags} />
-      <QuoteList quotes={filteredQuotes} showImage={false} />
+      <div className="quotes-list">
+        <h1 className="text-2xl font-bold">Danh Sách Trích Dẫn</h1>
+        <QuoteFilter quotes={quotes} setFilteredQuotes={setFilteredQuotes} allTags={allTags} />
+        <QuoteList quotes={filteredQuotes} showImage={false} />
+      </div>
     </div>
   );
 }

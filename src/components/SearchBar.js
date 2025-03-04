@@ -46,7 +46,7 @@ export default function SearchBar({ quotes, setFilteredQuotes }) {
         placeholder="Tìm kiếm..."
         className="search-input"
       />
-      <button onClick={() => handleSearch(query)} className="search-button">Tìm</button>
+      <button onClick={() => handleSearch(query)} className="btn btn-primary rounded-r-md">Tìm</button>
       {suggestions.length > 0 && (
         <ul className="suggestions-list">
           {suggestions.map((suggestion, index) => (

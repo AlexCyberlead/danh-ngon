@@ -3,6 +3,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reusable utility classes */
+@layer components {
+  .btn {
+    @apply p-2 rounded text-white;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-500;
+  }
+
+  .btn-danger {
+    @apply bg-red-500;
+  }
+}
+
+.form-input, .form-select, .form-textarea {
+  @apply p-2 border border-gray-300 rounded;
+}
+
 /* Page container styles */
 .page-container {
   @apply flex;
@@ -25,11 +48,11 @@
 
 /* Button styles */
 .button {
-  @apply mr-2 bg-red-500 text-white p-2 rounded;
+  @apply btn btn-primary mr-2;
 }
 
 .button-secondary {
-  @apply bg-gray-500 text-white p-2 rounded;
+  @apply btn btn-secondary;
 }
 
 /* Search bar styles */
@@ -38,11 +61,11 @@
 }
 
 .search-input {
-  @apply flex-1 p-2 border border-gray-300 rounded-l-md;
+  @apply flex-1 form-input rounded-l-md;
 }
 
 .search-button {
-  @apply p-2 bg-blue-500 text-white rounded-r-md;
+  @apply btn btn-primary rounded-r-md;
 }
 
 /* Suggestions list styles */
@@ -76,20 +99,16 @@
   @apply mb-2;
 }
 
-.form-input, .form-select, .form-textarea {
-  @apply p-2 border border-gray-300 rounded;
-}
-
 .form-actions {
   @apply flex space-x-4;
 }
 
 .form-button {
-  @apply bg-blue-500 text-white px-4 py-2 rounded;
+  @apply btn btn-primary;
 }
 
 .form-button-secondary {
-  @apply bg-gray-500 text-white px-4 py-2 rounded;
+  @apply btn btn-secondary;
 }
 
 /* Filter form styles */
@@ -105,20 +124,16 @@
   @apply mb-2 font-medium;
 }
 
-.filter-form-input, .filter-form-select {
-  @apply p-2 border border-gray-300 rounded;
-}
-
 .filter-form-actions {
   @apply flex space-x-4;
 }
 
 .filter-form-button {
-  @apply bg-blue-500 text-white px-4 py-2 rounded;
+  @apply btn btn-primary;
 }
 
 .filter-form-button-secondary {
-  @apply bg-gray-500 text-white px-4 py-2 rounded;
+  @apply btn btn-secondary;
 }
 
 /* Quote card styles */
@@ -163,11 +178,11 @@
 }
 
 .quote-card-edit-button {
-  @apply bg-blue-500 text-white px-4 py-2 rounded;
+  @apply btn btn-primary;
 }
 
 .quote-card-delete-button {
-  @apply bg-red-500 text-white px-4 py-2 rounded;
+  @apply btn btn-danger;
 }
 
 /* Navigation bar styles */

@@ -17,7 +17,7 @@ export default function QuoteFilterPage() {
     <div className="page-container">
       <BackButton />
       <div className="quotes-list">
-        <h1>Lọc Danh Ngôn</h1>
+        <h1 className="text-2xl font-bold">Lọc Danh Ngôn</h1>
         <QuoteList quotes={filteredQuotes} showActions={false} />
       </div>
       <div className="form-container">

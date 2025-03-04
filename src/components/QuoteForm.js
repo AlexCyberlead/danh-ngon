@@ -89,8 +89,8 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
         </div>
       )}
       <div className="form-actions">
-        <button onClick={onSubmit} className="form-button">{isFilterForm ? "Lọc" : "Lưu"}</button>
-        <button onClick={onCancel} className="form-button-secondary">Hủy</button>
+        <button onClick={onSubmit} className="btn btn-primary">{isFilterForm ? "Lọc" : "Lưu"}</button>
+        <button onClick={onCancel} className="btn btn-secondary">Hủy</button>
       </div>
     </div>
   );
