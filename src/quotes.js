@@ -119,44 +119,4 @@ export const quotes = [
     author: "Walt Disney",
     year: "2025"
   },
-  {
-    id: 16,
-    image: "/images/thanhcong16.jpg",
-    tag: "Sự kiên nhẫn",
-    quote: "Kiên nhẫn không phải là khả năng chờ đợi, mà là khả năng giữ thái độ tích cực trong khi chờ đợi.",
-    author: "Joyce Meyer",
-    year: "2025"
-  },
-  {
-    id: 17,
-    image: "/images/thanhcong17.jpg",
-    tag: "Trí tuệ",
-    quote: "Tri thức là sức mạnh. Thông tin là giải phóng. Giáo dục là tiền đề của tiến bộ.",
-    author: "Kofi Annan",
-    year: "2025"
-  },
-  {
-    id: 18,
-    image: "/images/thanhcong18.jpg",
-    tag: "Sự tự tin",
-    quote: "Tự tin đến từ kỷ luật và rèn luyện bản thân.",
-    author: "Robert Kiyosaki",
-    year: "2025"
-  },
-  {
-    id: 19,
-    image: "/images/thanhcong19.jpg",
-    tag: "Sự đổi mới",
-    quote: "Đổi mới phân biệt giữa người lãnh đạo và người đi theo.",
-    author: "Steve Jobs",
-    year: "2025"
-  },
-  {
-    id: 20,
-    image: "/images/thanhcong20.jpg",
-    tag: "Thành công",
-    quote: "Thành công là tổng số của những nỗ lực nhỏ, được lặp đi lặp lại mỗi ngày.",
-    author: "Robert Collier",
-    year: "2025"
-  }
 ];
