@@ -9,12 +9,13 @@ import QuoteDetail from "./pages/QuoteDetailPage";
 import ManageQuotes from "./pages/ManageQuotesPage";
 import { quotes as initialQuotes } from "./quotes";
 
+
 export default function App() {
   const [quotes, setQuotes] = useState(initialQuotes);
 
   return (
     <Router>
-      <div className="text-center min-h-screen bg-gray-100 p-10">
+      <div className="text-center min-h-screen bg-gray-100 p-10 ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/quotes" element={<QuoteList quotes={quotes} />} />

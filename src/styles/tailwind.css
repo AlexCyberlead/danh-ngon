@@ -187,15 +187,15 @@
 
 /* Navigation bar styles */
 .nav-bar {
-  @apply bg-gray-800 p-4;
+  @apply bg-gray-800 p-4 flex justify-center;
 }
 
 .nav-list {
-  @apply flex justify-center space-x-6;
+  @apply text-white flex space-x-6 items-center;
 }
 
 .nav-link {
-  @apply text-white text-lg px-3 py-2;
+  @apply text-white text-lg px-3 py-2 hover:text-blue-400 transition-colors duration-300;
 }
 
 /* Back button styles */
