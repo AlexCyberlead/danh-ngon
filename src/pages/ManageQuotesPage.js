@@ -46,28 +46,30 @@ export default function ManageQuotes() {
   };
 
   return (
-    <div className="page-container">
+    <div className="container mx-auto p-4">
       <BackButton />
-      <div className="quotes-list">
-        <h1 className="text-2xl font-bold">Manage Quotes</h1>
-        <QuoteList quotes={quotes} showActions={true} onDelete={handleDelete} onEdit={handleEdit} />
-      </div>
-      <div className="form-container">
-        {showConfirmDelete && selectedQuote && (
-          <div className="confirm-dialog">
-            <p>Bạn có chắc muốn xóa trích dẫn này không? ID: {selectedQuote.id}</p>
-            <button onClick={confirmDelete} className="btn btn-primary">Yes</button>
-            <button onClick={() => setShowConfirmDelete(false)} className="btn btn-secondary">No</button>
-          </div>
-        )}
-        {showConfirmEdit && selectedQuote && (
-          <QuoteForm
-            quote={selectedQuote}
-            onChange={setSelectedQuote}
-            onSubmit={confirmEdit}
-            onCancel={() => setShowConfirmEdit(false)}
-          />
-        )}
+      <div className="row">
+        <div className="col-md-8">
+          <h1 className="text-2xl font-bold mb-4">Manage Quotes</h1>
+          <QuoteList quotes={quotes} showActions={true} onDelete={handleDelete} onEdit={handleEdit} />
+        </div>
+        <div className="col-md-4">
+          {showConfirmDelete && selectedQuote && (
+            <div className="confirm-dialog bg-white p-4 rounded shadow-md">
+              <p className="mb-4">Bạn có chắc muốn xóa trích dẫn này không? ID: {selectedQuote.id}</p>
+              <button onClick={confirmDelete} className="btn btn-primary mr-2">Yes</button>
+              <button onClick={() => setShowConfirmDelete(false)} className="btn btn-secondary">No</button>
+            </div>
+          )}
+          {showConfirmEdit && selectedQuote && (
+            <QuoteForm
+              quote={selectedQuote}
+              onChange={setSelectedQuote}
+              onSubmit={confirmEdit}
+              onCancel={() => setShowConfirmEdit(false)}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

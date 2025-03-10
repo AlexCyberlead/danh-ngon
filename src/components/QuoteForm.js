@@ -37,10 +37,10 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
             onChange={handleNewTagChange}
             placeholder="Enter new tag"
             onBlur={() => setIsEditingTag(false)}
-            className="form-input"
+            className="form-control form-input"
           />
         ) : (
-          <select value={quote.tag} onChange={handleTagChange} onDoubleClick={handleTagDoubleClick} className="form-select">
+          <select value={quote.tag} onChange={handleTagChange} onDoubleClick={handleTagDoubleClick} className="form-control form-select">
             <option value="">Select Tag</option>
             {allTags.map((tag) => (
               <option key={tag} value={tag}>
@@ -57,7 +57,7 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
           type="text"
           value={quote.author}
           onChange={(e) => onChange({ ...quote, author: e.target.value })}
-          className="form-input"
+          className="form-control form-input"
         />
       </div>
       <div className="form-group">
@@ -66,7 +66,7 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
           type="text"
           value={quote.year}
           onChange={(e) => onChange({ ...quote, year: e.target.value })}
-          className="form-input"
+          className="form-control form-input"
         />
       </div>
       <div className="form-group">
@@ -74,7 +74,7 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
         <textarea
           value={quote.quote}
           onChange={(e) => onChange({ ...quote, quote: e.target.value })}
-          className="form-textarea"
+          className="form-control form-textarea"
         />
       </div>
       {!isFilterForm && (
@@ -84,11 +84,11 @@ export default function QuoteForm({ quote, onChange, onSubmit, onCancel, isFilte
             type="text"
             value={quote.image}
             onChange={(e) => onChange({ ...quote, image: e.target.value })}
-            className="form-input"
+            className="form-control form-input"
           />
         </div>
       )}
-      <div className="form-actions">
+      <div className="d-flex justify-content-between">
         <button onClick={onSubmit} className="btn btn-primary">{isFilterForm ? "Lọc" : "Lưu"}</button>
         <button onClick={onCancel} className="btn btn-secondary">Hủy</button>
       </div>

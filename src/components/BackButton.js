@@ -12,7 +12,7 @@ const BackButton = () => {
 
     return (
         <button
-            className="back-button"
+            className="btn btn-outline-primary position-fixed top-2 start-2"
             onClick={handleClick}
         >
             <FontAwesomeIcon icon={faArrowLeft} />

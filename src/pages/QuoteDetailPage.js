@@ -12,8 +12,8 @@ export default function QuoteDetail() {
   }
 
   return (
-    <div className="p-5">
-      <img src={quote.image} alt="Hình minh họa" className="mb-4" />
+    <div className="container p-5">
+      <img src={quote.image} alt="Hình minh họa" className="mb-4 img-fluid" />
       <h2 className="text-2xl font-bold">{quote.quote}</h2>
       <p><strong>Tác giả:</strong> {quote.author} ({quote.year})</p>
       <p><strong>Chủ đề:</strong> {quote.tag}</p>

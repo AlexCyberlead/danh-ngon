@@ -38,19 +38,19 @@ export default function SearchBar({ quotes, setFilteredQuotes }) {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar input-group mb-3 relative">
       <input
         type="text"
         value={query}
         onChange={handleChange}
         placeholder="Tìm kiếm..."
-        className="search-input"
+        className="form-control"
       />
-      <button onClick={() => handleSearch(query)} className="btn btn-primary rounded-r-md">Tìm</button>
+      <button onClick={() => handleSearch(query)} className="btn btn-primary">Tìm</button>
       {suggestions.length > 0 && (
-        <ul className="suggestions-list">
+        <ul className="suggestions-list list-group position-absolute w-100">
           {suggestions.map((suggestion, index) => (
-            <li key={index} onClick={() => handleSelect(suggestion.quote)} className="suggestion-item">
+            <li key={index} onClick={() => handleSelect(suggestion.quote)} className="suggestion-item list-group-item list-group-item-action">
               {suggestion.quote}
             </li>
           ))}

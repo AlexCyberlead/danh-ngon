@@ -8,12 +8,14 @@ export default function QuoteSearchPage() {
   const [filteredQuotes, setFilteredQuotes] = useState(initialQuotes);
 
   return (
-    <div className="page-container">
+    <div className="container">
       <BackButton />
-      <div className="quotes-list">
-        <h1 className="text-2xl font-bold">Tìm Kiếm Danh Ngôn</h1>
-        <SearchBar quotes={initialQuotes} setFilteredQuotes={setFilteredQuotes} />
-        <QuoteList quotes={filteredQuotes} showImage={true} />
+      <div className="row">
+        <div className="col">
+          <h1 className="text-2xl font-bold">Tìm Kiếm Danh Ngôn</h1>
+          <SearchBar quotes={initialQuotes} setFilteredQuotes={setFilteredQuotes} />
+          <QuoteList quotes={filteredQuotes} showImage={true} />
+        </div>
       </div>
     </div>
   );
