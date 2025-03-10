@@ -8,6 +8,7 @@ import AddQuote from "./pages/AddQuotePage";
 import QuoteDetail from "./pages/QuoteDetailPage";
 import ManageQuotes from "./pages/ManageQuotesPage";
 import { quotes as initialQuotes } from "./quotes";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 export default function App() {
